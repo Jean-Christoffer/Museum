@@ -74,6 +74,7 @@ body{
 .hero-banner{
     background: var(--secondary-black);
     color: var(--logo-color);
+    
 }
 
 .logo-container{
@@ -84,7 +85,43 @@ body{
 }
 
 
+
+/*IMG_TEST*/
+
+.rocket-ship{
+    position: absolute;
+    width: 100px;
+    top:0%;
+    right: 20%;
+    animation: float 4.5s linear forwards 0s infinite normal;
+    
+}
+.rocket-ship img{ 
+    width: 100%;
+}
+
+@keyframes float{
+    from{
+        transform: translateY(-15%);
+;
+}
+    to{
+        transform: translateY(15%);
+}
+}
+
+
+
+
+
 /* Navigation*/
+.hero-banner{
+    background: url(/images/logo/nightsky.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}  
+
 
 .navigation-wrapper{
     align-items: center;
@@ -174,12 +211,12 @@ body{
 
 @media(min-width:52em){
     .hero-banner{
-        padding: 20px;
+        padding: 0;
         align-items: center;
     }
 
     .logo-container, .hero-banner h1{
-        margin-left: 10px;
+        margin: 5px 10px;
     }
     .hamburger{
         display: none;
@@ -225,6 +262,7 @@ body{
     border-radius: 5px;
     color: white;
     transition: 0.2s all;
+    font-weight: var(--font-weight-mobile);
 }
 .cta-wrapper:active, .logo:active{
     transform: scale(0.98);
@@ -233,6 +271,11 @@ body{
     text-align: center;
     margin:30px auto;
     text-transform: uppercase;
+}
+@media(min-width: 40rem){
+    .cta-hero{
+        padding: 10px 80px;
+    }
 }
 
 .video-wrapper{
