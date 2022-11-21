@@ -101,6 +101,7 @@ body{
 
 
 /*Nav Mobile*/
+
 @media(max-width:30rem){
 
 }
@@ -120,19 +121,19 @@ body{
         z-index: 1000;
         transform: translateX(-100%);
         transition: 0.4s ease-in-out;
-        background: rgba(0 0% 0% / 0.75);
+        background: rgba(156, 152, 152, 0.75);
         backdrop-filter:blur(1rem);
         text-align: left;
         justify-content: center;
-        color: white;
+        color: rgb(0, 0, 0);
    
     }
     /*Hamburger Menu*/
 
 
     .line{
-        width: 20px;
-        height: 2px;
+        width: 23px;
+        height: 3px;
         background-color: black;
         display: block;
         margin: 5px;
@@ -153,11 +154,11 @@ body{
     }
 
     .hamburger.active .top{
-        transform: rotate(45deg) translate(7px, 6px);
+        transform: rotate(45deg) translate(8px, 7px);
 
 }
     .hamburger.active .bottom{
-        transform: rotate(-45deg) translate(4px, -3px);
+        transform: rotate(-45deg) translate(4px, -3.5px);
 
 }
     .hamburger.active .middle{
