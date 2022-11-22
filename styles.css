@@ -97,7 +97,8 @@ body{
 
 .navigation-wrapper{
     align-items: center;
-    background: var(--light-blue)
+    background-image: linear-gradient( 65.5deg,  rgba(26, 167, 167, 0.658) -15.1%, rgba(23, 25, 95, 0.87) 71.5% );
+
 }
 
 .nav{
@@ -205,14 +206,11 @@ body{
     color: var(--white);
     
  }
- .nav a {
-    text-decoration: underline 0.10em #091026;
-    transition: text-decoration-color 400ms ease-in-out;
-}
+
   
   .nav a:hover {
-    text-decoration-color:white;
-    -moz-text-decoration-color:white;
+    text-decoration: underline 0.10em  white;
+
 }
 }
 
@@ -238,11 +236,13 @@ body{
     display: block;
 }
 .cta-wrapper:active, .logo:active{
-    transform: scale(0.98);
+    transform: scale(0.99);
+;
 }
 .cta-wrapper{
     text-align: center;
-    margin:30px auto;
+    max-width: fit-content;
+    margin: 20px auto;
     text-transform: uppercase;
 }
 @media(min-width: 40rem){
@@ -287,48 +287,42 @@ body{
         text-align: center;
         color: white;
     }
+
+
+
     .event-card-container{
         width: min(100% - 2rem, 300px);
         background: white;
         border-radius: 15px;
-
- 
-
-        
+        box-shadow: 0 0 0 2px transparent;
+      
     }
+    .event-title{
+        background: #0D1E40;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
     .event-img-container{
         width: 100%;
+        height: 200px;
+        background: url('/images/Museum/13311397_v617batch2-kul-05-technology.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
     }
-    .event-name-container{
-        background: #0D1E40;
-        text-align: center;
-        color: white;
-        font-size: 0.8rem;
+
+    .event-text{
         padding: 10px;
-        margin-top: 0;
-    }
-    .text-container{
-        background: white;
         line-height: 150%;
-        text-align: left;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        width: min(100%, 300px);
-        padding: 8px;
-    
-    }  
-    .text-container p {
-        padding: 5px;
     }
-    .event-img-container img{
-        width: 100%;
-        max-height: 200px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        background-size: co;
-    }
+
     .event-cta-container{
-        margin-top: auto;
+        margin: 10px;
         text-align: center;
      
     }
@@ -349,72 +343,22 @@ body{
 /*Footer*/
 
 footer{
-    background-color: var(--light-blue);
+  background-image: linear-gradient( 65.5deg,  rgba(26, 167, 167, 0.658) -15.1%, rgba(23, 25, 95, 0.87) 71.5% );
     flex-direction: column;
     margin-top: auto;
     color:var( --white);
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    font-weight:400;
   
 }
-.footer-wrapper{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:20px;
-
-  
+footer h4{
+    margin-bottom: 10px;
 }
-
-.socials-wrapper{
-    text-align: center;
-    line-height: 2;
+.socials{
+    font-size: 1.9rem;
 }
-.socials-links{
-    padding: 5px;
-}
-.news-letter-wrapper {
-    flex-direction: column;
-    gap: 0.5rem;
-
-}.input-wrapper{
-    gap:0.2rem;
-}
-.input-wrapper input{
-    padding: 5px;
-    border-radius: 3px;
-    border: none;
-}
-.input-wrapper button{
-    padding: 5px 5px;
-    border: none;
-    border-radius: 3px;
-}
-
-
-.copyright{
-    margin: 20px;
- 
-}   
-
-@media(min-width: 40rem){
-    footer{
-        gap: 0;
-    }
-    .footer-wrapper{
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-        gap: 0;
-    }
-    .footer-list{
-        flex-direction: column;
-        text-align: left;
-        margin-top: 30px;
-    }
-    .copyright{
-        margin: 15px 0;
-     
-    }   
-    
+.social-list{
+    margin-top: 10px;
+    gap:3rem;
 }
