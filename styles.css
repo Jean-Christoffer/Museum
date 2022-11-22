@@ -24,10 +24,12 @@ html{
    --font-body:'Inter', sans-serif;
    
    --black:black;
+   
    --secondary-black:#04080D;
-   --light-blue:#7EB6D9;
-   --dark-blue:#2D5273;
+   --light-blue:#091026;
+   --dark-blue:#091026;
    --logo-color: #488cb6;
+   --white:white;
 }
 h1{
     font-size: var(--h1-mobile);
@@ -128,11 +130,11 @@ body{
         z-index: 1000;
         transform: translateX(-100%);
         transition: 0.4s ease-in-out;
-        background: rgba(156, 152, 152, 0.75);
+        background: rgba(53, 51, 51, 0.75);
         backdrop-filter:blur(1rem);
         text-align: left;
         justify-content: center;
-        color: rgb(0, 0, 0);
+        color: var( --white);
    
     }
     /*Hamburger Menu*/
@@ -141,7 +143,7 @@ body{
     .line{
         width: 23px;
         height: 3px;
-        background-color: black;
+        background-color:var(--white);
         display: block;
         margin: 5px;
         position: relative;
@@ -200,17 +202,17 @@ body{
     gap:clamp(1rem, 5vw, 5rem);
     padding-block: 1rem;
     padding-inline:clamp(3rem, 7vw ,10rem);
-    color: var(--black);
+    color: var(--white);
     
  }
  .nav a {
-    text-decoration: underline 0.10em rgba(0, 0, 0, 0);
+    text-decoration: underline 0.10em #091026;
     transition: text-decoration-color 400ms ease-in-out;
 }
   
   .nav a:hover {
-    text-decoration-color: rgb(0, 0, 0);
-  
+    text-decoration-color:white;
+    -moz-text-decoration-color:white;
 }
 }
 
@@ -266,11 +268,19 @@ body{
 footer{
     background-color: var(--light-blue);
     flex-direction: column;
+    margin-top: auto;
+    color:var( --white);
+    align-items: center;
+    gap: 20px;
+  
+}
+.footer-wrapper{
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    gap: 40px;
-    margin-top: auto;
+    gap:20px;
+
+  
 }
 
 .socials-wrapper{
@@ -280,10 +290,48 @@ footer{
 .socials-links{
     padding: 5px;
 }
+.news-letter-wrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+
+}.input-wrapper{
+    gap:0.2rem;
+}
+.input-wrapper input{
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+}
+.input-wrapper button{
+    padding: 5px 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.copyright{
+    margin: 20px;
+ 
+}   
 
 @media(min-width: 40rem){
     footer{
+        gap: 0;
+    }
+    .footer-wrapper{
         flex-direction: row;
         justify-content: space-around;
+        width: 100%;
+        gap: 0;
     }
+    .footer-list{
+        flex-direction: column;
+        text-align: left;
+        margin-top: 30px;
+    }
+    .copyright{
+        margin: 15px 0;
+     
+    }   
+    
 }
