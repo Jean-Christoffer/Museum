@@ -84,36 +84,6 @@ body{
     max-width: 100%;
 }
 
-
-
-/*IMG_TEST*/
-
-.rocket-ship{
-    position: absolute;
-    width: 100px;
-    top:0%;
-    right: 20%;
-    animation: float 4.5s linear forwards 0s infinite normal;
-    
-}
-.rocket-ship img{ 
-    width: 100%;
-}
-
-@keyframes float{
-    from{
-        transform: translateY(-15%);
-;
-}
-    to{
-        transform: translateY(15%);
-}
-}
-
-
-
-
-
 /* Navigation*/
 .hero-banner{
     background: url(/images/logo/nightsky.jpg);
