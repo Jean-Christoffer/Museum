@@ -272,8 +272,10 @@ body{
     .event-row{
         justify-content: center;
         flex-wrap: wrap;
-        margin: 20px auto;
-        gap: 30px;
+        margin: 50px;
+        gap:50px
+
+    
     }
 
     .event-banner{
@@ -315,14 +317,21 @@ body{
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
     }
-
+    .event2{
+        background: url('/images/Museum/26600854_wwang_040522_29.jpg');
+        background-size: cover;
+    }
+    .event3{
+        background: url('/images/Museum/robot-handshake-human-background-futuristic-digital-age.jpg');
+        background-size: cover; 
+    }
     .event-text{
-        padding: 10px;
+        padding: 0 10px;
         line-height: 150%;
     }
 
     .event-cta-container{
-        margin: 10px;
+        margin:  10px;
         text-align: center;
      
     }
