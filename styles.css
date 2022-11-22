@@ -97,8 +97,8 @@ body{
 
 .navigation-wrapper{
     align-items: center;
-    background-image: linear-gradient( 65.5deg,  rgba(26, 167, 167, 0.658) -15.1%, rgba(23, 25, 95, 0.87) 71.5% );
 
+    background-image: linear-gradient( 65.5deg,  rgba(26, 167, 167, 0.658) -15.1%, rgb(23, 25, 95) 71.5% );
 }
 
 .nav{
@@ -112,16 +112,10 @@ body{
 
 /*Nav Mobile*/
 
-@media(max-width:30rem){
 
-}
 @media (max-width: 52em){
 
-    .hero-banner{
-        flex-direction: column;
-        padding-bottom: 10px;
-        align-items: center;
-    }
+
     .nav{
         position: fixed;
         inset:0 0% 0 0;
@@ -183,12 +177,9 @@ body{
 /*Navigation Desktop*/
 
 @media(min-width:52em){
-    .hero-banner{
-        padding: 0;
-        align-items: center;
-    }
 
-    .logo-container, .hero-banner h1{
+
+    .logo-container{
         margin: 5px 10px;
     }
     .hamburger{
@@ -197,6 +188,7 @@ body{
     .navigation-wrapper{
         justify-content: center;
         background-color: var(--light-blue);
+       
     }
     
  .nav{
@@ -204,6 +196,7 @@ body{
     padding-block: 1rem;
     padding-inline:clamp(3rem, 7vw ,10rem);
     color: var(--white);
+
     
  }
 
@@ -219,7 +212,7 @@ body{
 
 .hero-section{
     text-align: center;
-    margin:10px 0;
+    margin:80px auto;
 }
 .hero-section h1{
     padding: 20px;
@@ -248,6 +241,10 @@ body{
 @media(min-width: 40rem){
     .cta-hero{
         padding: 10px 80px;
+    }
+    .hero-section{
+        
+        margin:50px auto;
     }
 }
 
@@ -335,6 +332,10 @@ body{
         text-align: center;
      
     }
+    .event-cta-container:active{
+        transform: scale(0.99);
+
+}
 
     .event-time{
         font-weight: 700;
