@@ -329,6 +329,7 @@ body{
 
     .event-time{
         font-weight: 700;
+        padding-bottom: 2px;
     }
 
 @media(min-width:40rem){
