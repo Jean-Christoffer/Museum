@@ -473,79 +473,48 @@ header {
 }
 
 /*contact*/
-.contact-section h1{
+
+.contact-form-container{
+    max-width: 960px;
+    margin: 50px auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    background: white;
+}
+
+.form-container{
     padding: 20px;
 }
-.adress-and-opening-hours{
-    gap:3rem;
-    margin-top: 20px;
-    
-}
-.mail-and-phone{
-    gap:3rem;
-    margin-top: 20px;
-}
-.contact-section h1{
-    text-align: center;
-    color: white;
-}
-.location-dot, .fa-clock, .fa-envelope, .fa-square-phone{
-    margin-bottom: 10px;
-    font-size: 2rem;
-}
-.contact-wrapper{
-   background:black;
-   justify-content: center;
-   padding: 50px;
-}
 
-.location-info{
-    padding: 50px;
-    text-align: left;
-    line-height: 150%;
-    background: #0F1926;
-    color:white;
-    border-radius: 10px 0px 0px 10px;
+.form-container h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
-form{
-    color: white;
-    padding: 50px;
-    background:#0F1926;
-    border-radius: 0px 10px 10px 0;
+.contact-form{
+    display: grid;
+    row-gap: 1rem;
+    width: min(100%, 400px);
 }
-form h2{
-    margin-bottom: 10px;
-}
-
-fieldset{
-    border: none;
-    
-}
-.field-wrapper{
-    flex-direction: column;
-    gap: 10px;
-    
-}
-
-.field-wrapper input{
+.contact-form input{
+    width: 100%;
     padding: 5px;
+    font-size: 1rem;
+    outline: none;
 }
-.field-wrapper textarea{
+
+textarea{
     height: 100px;
+   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media(min-width:40rem){
+    .contact-form-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 
 
