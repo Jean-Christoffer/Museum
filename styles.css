@@ -286,9 +286,6 @@ header {
 /*Event-page*/
 
 
-
-
-
     .event-row{
         justify-content: center;
         flex-wrap: wrap;
@@ -309,8 +306,6 @@ header {
         text-align: center;
         color: white;
     }
-
-
 
     .event-card-container{
         width: min(100% - 2rem, 300px);
@@ -384,6 +379,95 @@ header {
        margin-left: 100px;
     }
 }
+
+/*Exhibitions*/
+
+
+.exhibitions-banner{
+    background: url('/images/Museum/david-clode-75CxJTYeUYs-unsplash.jpg');
+    background-position-y:bottom;
+}
+.exhibitions-section-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+    background: black;
+}
+.exhibition-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: min(100% - 2rem, 1000px);
+    padding: 10px;
+    background: #D9D9D9;
+    margin: 10px auto;
+    line-height: 150%;
+}
+ .exhibition-text, .exhibition-time, .exhibition-cta{
+    padding: 10px;
+}
+
+.exhibition-cta{
+    flex-direction: column;
+}
+.exhibition-img-container{
+    width: min(100%, 1000px);
+    margin: 0;
+    padding: 0;
+}
+.exhibition-img-container img{
+    width:100%;
+}
+.exhibition-info-wrapper{
+    flex-direction: column;
+}
+
+@media(min-width:40rem){
+    .exhibition-card{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .exhibition-img-container{
+        grid-column: 3;
+        grid-row: 1/2;
+    }
+    .exhibition-info-wrapper{
+        flex-direction: row;
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+    .exhibition-text{
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
