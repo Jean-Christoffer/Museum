@@ -22,6 +22,7 @@ html{
    --font-weight-desktop:700;
 
    --font-logo-h1:'Orbitron', sans-serif;
+   --font-h-elements:'Orbitron', sans-serif;
    --font-body:'Inter', sans-serif;
    
    --black:black;
@@ -35,6 +36,9 @@ html{
 h1{
     font-size: var(--h1-mobile);
     font-family: var(--font-logo-h1);
+}
+h2,h3,h4{
+    font-family: var( --font-h-elements);
 }
 p{
     font-size: var(--font-size-mobile);
@@ -384,15 +388,13 @@ header {
 
 
 .exhibitions-banner{
-    background: url('/images/Museum/david-clode-75CxJTYeUYs-unsplash.jpg');
+    background: url('/images/Museum/exresize/exbanner.png');
     background-position-y:bottom;
 }
 .exhibitions-section-wrapper{
     display: grid;
     grid-template-columns: 1fr;
-    gap:10px;
-
-   
+    gap: 30px;
 }
 .exhibition-card{
     display: grid;
@@ -405,9 +407,14 @@ header {
 
 }
  .exhibition-text, .exhibition-time, .exhibition-cta{
-    padding: 10px;
+    padding: 15px;
 }
-
+.exhibition-text h3{
+    margin: 10px 0;
+}
+.exhibition-text h2{
+    margin-top: 5px;
+}
 .exhibition-cta{
     flex-direction: column;
     background: white;
@@ -422,12 +429,19 @@ header {
 .exhibition-img-container{
     width: min(100%, 1000px);
     height: min(300px);
-    margin: 0;
-    padding: 0;
-    background: url('images/Museum/meg-jerrard-CW4FdD9EYJw-unsplash.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 10px 10px 0 0;
+}
+.exhibition1{
+    background: url('images/Museum/exresize/biologyDesktop.png');
+    background-size: cover;
+}
+.exhibition2{
+    background: url('images/Museum/exresize/universe.png') center;
+    background-size: cover;
+}
+.exhibition3{
+    background: url('images/Museum/exresize/Medicine.png') center;
 }
 
 .exhibition-info-wrapper{
@@ -441,8 +455,6 @@ header {
     .exhibition-img-container{
         grid-column: 3;
         grid-row: 1/3;
-        background: url('images/Museum/meg-jerrard-CW4FdD9EYJw-unsplash.jpg');
-        background-size: cover;
         height: auto;
         border-radius: 0 10px 10px 0;
      
