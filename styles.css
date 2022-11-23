@@ -3,7 +3,8 @@
 html{
     height: 100%;
     font-size: 16px;
-    background: var(--black);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgb(3, 3, 3) 0%, rgb(5, 5, 5) 35%, rgb(12, 19, 36) 68%, rgb(0, 13, 15) 100%); 
 }
 
 *{
@@ -73,11 +74,6 @@ body{
     flex-direction: column;
     font-family: var(--font-body);
 }
-.hero-banner{
-    background: var(--secondary-black);
-    color: var(--logo-color);
-    
-}
 
 .logo-container{
     max-width: 100px;
@@ -87,18 +83,25 @@ body{
 }
 
 /* Navigation*/
-.hero-banner{
-    background: url(/images/logo/nightsky.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.title-site{
+    background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+header {
+    background: black;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, #1CB5E0 0%, #000851 100%) 1;
 }  
 
 
 .navigation-wrapper{
     align-items: center;
-
-    background-image: linear-gradient( 65.5deg,  rgba(26, 167, 167, 0.658) -15.1%, rgb(23, 25, 95) 71.5% );
+  
+   
 }
 
 .nav{
@@ -108,13 +111,17 @@ body{
     font-size: 20px;
     position: sticky;
 }
-
+.logo-wrapper{
+    align-items: center;
+}
 
 /*Nav Mobile*/
 
 
 @media (max-width: 52em){
-
+    .navigation-wrapper{
+        justify-content: space-around;
+    }
 
     .nav{
         position: fixed;
@@ -138,7 +145,7 @@ body{
     .line{
         width: 23px;
         height: 3px;
-        background-color:var(--white);
+        background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
         display: block;
         margin: 5px;
         position: relative;
@@ -186,16 +193,17 @@ body{
         display: none;
     }
     .navigation-wrapper{
-        justify-content: center;
-        background-color: var(--light-blue);
-       
+        justify-content: center; 
     }
+ 
     
  .nav{
     gap:clamp(1rem, 5vw, 5rem);
     padding-block: 1rem;
     padding-inline:clamp(3rem, 7vw ,10rem);
-    color: var(--white);
+    background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     
  }
@@ -221,13 +229,26 @@ body{
 
 .cta{
     padding: 10px 50px;
-    background: var(--dark-blue);
     border-radius: 5px;
-    color: white;
-    transition: 0.2s all;
     font-weight: var(--font-weight-mobile);
-    display: block;
+    display: block; 
+    background-image: linear-gradient(to right, #000428 0%, #004e92  51%, #000428  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-weight: 700;            
 }
+
+
+.cta:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+  }
+
+
 .cta-wrapper:active, .logo:active{
     transform: scale(0.99);
 ;
@@ -238,6 +259,7 @@ body{
     margin: 20px auto;
     text-transform: uppercase;
 }
+
 @media(min-width: 40rem){
     .cta-hero{
         padding: 10px 80px;
@@ -257,7 +279,7 @@ body{
 }
 .trailer{
     max-width: 100%;
-    border-radius: 10px;
+  
 }
 
 /*Event-page*/
@@ -297,7 +319,7 @@ body{
       
     }
     .event-title{
-        background: #0D1E40;
+        background-image: linear-gradient(to right, #000428 0%, #004e92  51%, #000428  100%);
         color: white;
         text-align: center;
         padding: 10px;
@@ -354,10 +376,11 @@ body{
 /*Footer*/
 
 footer{
-  background-image: linear-gradient( 65.5deg,  rgba(26, 167, 167, 0.658) -15.1%, rgba(23, 25, 95, 0.87) 71.5% );
+    background:black;
     flex-direction: column;
     margin-top: auto;
-    color:var( --white);
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, #1CB5E0 0%, #000851 100%) 1;
     align-items: center;
     gap: 30px;
     font-weight:400;
@@ -365,11 +388,24 @@ footer{
 }
 footer h4{
     margin-bottom: 10px;
+    background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .socials{
     font-size: 1.9rem;
+    background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .social-list{
-    margin-top: 10px;
+    margin-top: 30px;
     gap:3rem;
+    
+}
+.usefull-links{
+    background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
