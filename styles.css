@@ -391,7 +391,8 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     gap:10px;
-    background: black;
+
+   
 }
 .exhibition-card{
     display: grid;
@@ -401,10 +402,7 @@ header {
     background: #D9D9D9;
     margin: 10px auto;
     line-height: 150%;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+
 }
  .exhibition-text, .exhibition-time, .exhibition-cta{
     padding: 10px;
@@ -412,6 +410,14 @@ header {
 
 .exhibition-cta{
     flex-direction: column;
+    background: white;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.event-cta-container{
+    box-shadow:none
 }
 .exhibition-img-container{
     width: min(100%, 1000px);
@@ -422,10 +428,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 0 10px 10px 0;
-    -webkit-border-radius: 0 10px 10px 0;
-    -moz-border-radius: 0 10px 10px 0;
-    -ms-border-radius: 0 10px 10px 0;
-    -o-border-radius: 0 10px 10px 0;
+
 }
 
 .exhibition-info-wrapper{
