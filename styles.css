@@ -421,7 +421,11 @@ header {
     background: url('images/Museum/meg-jerrard-CW4FdD9EYJw-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
 }
 
 .exhibition-info-wrapper{
