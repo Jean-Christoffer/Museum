@@ -179,6 +179,10 @@ header {
     .hamburger.active .middle{
         opacity: 0;
 }
+.hamburger.active .line{
+    background: white;
+
+}
     .nav.active{
         transform: translateX(0%);
     }
@@ -729,12 +733,12 @@ textarea{
 
 /*get involved*/
 
-
-#tsparticles{
-    background: black;
+#tsParticles {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1000;
 }
-
-
 
 
 
