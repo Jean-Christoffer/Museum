@@ -53,20 +53,47 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="contact">
+            <h1>Contact</h1>
             <div class="contact-form-container">
                 <div class="form-container">
                     <h3>Message us</h3>
                     <form class="contact-form">
+                        <label for="name">Name</label>
+                        <input type="text" name="name">
+                        <label for="email">Email</label>
+                        <input type="email">
+                        <label for="subject">Subject</label>
                         <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <textarea>Message</textarea>
-                        <input type="submit" value="send" class="contact-send">
+                        <label for="message">Message</label>
+                        <textarea></textarea>
+                        <input type="submit" value="send" class="contact-send cta">
                     </form>
                 </div>
                 <div class="museum-info">
-                    <p>some text</p>
+                  <h3>Contact info</h3>
+                    <div class="adress-info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="titles">Adress</p>
+                        <p>Super street 45</p>
+                        <p>1145 Oslo</p>
+                    </div>
+                    <div class="time-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="titles">Opening hours</p>
+                        <p>Monday-saturday</p>
+                        <p>0900-1700</p>
+                    </div>
+                    <div class="mail-info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p class="titles">Email</p>
+                        <p>mail@google.com</p>
+                    </div>
+                    <div class="phone-info">
+                        <i class="fa-solid fa-square-phone"></i>
+                        <p class="titles">Phone</p>
+                        <p>+471234503</p>
+                    </div>
                 </div>
             </div>
         </section>
