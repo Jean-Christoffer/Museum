@@ -438,15 +438,15 @@ header {
     border-radius: 10px 10px 0 0;
 }
 .exhibition1{
-    background: url('images/Museum/exresize/biologyDesktop.png');
+    background: url('/images/Museum/exresize/biologyDesktop.png');
     background-size: cover;
 }
 .exhibition2{
-    background: url('images/Museum/exresize/universe.png') center;
+    background: url('/images/Museum/exresize/universe.png') center;
     background-size: cover;
 }
 .exhibition3{
-    background: url('images/Museum/exresize/Medicine.png') center;
+    background: url('/images/Museum/exresize/Medicine.png') center;
 }
 
 .exhibition-info-wrapper{
@@ -656,7 +656,7 @@ textarea{
 .about-explore{
     justify-content: center;
     align-items: center;
-    background-image: url('images/aboutImages/dino1.jpg');
+    background-image: url('/images/aboutImages/dino1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
