@@ -9,7 +9,7 @@ const imageArr = [img1, img2, img3, img4, img5]
 const imageSection = document.querySelector('.about-explore')
 
 function changeIt(){
-    const random = Math.floor(Math.random() *imageArr.length +1)
+    const random = Math.floor(Math.random() * imageArr.length)
     imageSection.style.backgroundImage = imageArr[random]
 
 }

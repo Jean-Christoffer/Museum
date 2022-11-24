@@ -13,7 +13,7 @@ tsParticles.load("tsParticles", {
       enable: true
     },
     responsive: [{
-        maxWidth: 500,
+        maxWidth: 600,
         options: {
           particles: {
             number: {limit: 40},

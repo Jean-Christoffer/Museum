@@ -228,6 +228,7 @@ header {
 .intro{
     background: black;
     padding: 20px;
+
 }
 
 .hero-section{
@@ -273,6 +274,9 @@ header {
 }
 
 @media(min-width: 40rem){
+    .intro{
+        margin: 50px;
+    }
     .cta-hero{
         padding: 10px 80px;
     }
