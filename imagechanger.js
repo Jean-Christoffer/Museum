@@ -11,9 +11,8 @@ const imageSection = document.querySelector('.about-explore')
 function changeIt(){
     const random = Math.floor(Math.random() *imageArr.length +1)
     imageSection.style.backgroundImage = imageArr[random]
-    imageSection.style.transition = "0.5s"
 
 }
 
-setInterval(changeIt, 3100)
+setInterval(changeIt, 3000)
 
