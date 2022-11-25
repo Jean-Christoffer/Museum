@@ -6,7 +6,7 @@ const img5 = "url('/images/aboutImages/teaching.jpg')";
 
 const imageArr = [img1, img2, img3, img4, img5]
 
-const imageSection = document.querySelector('.about-explore')
+const imageSection = document.querySelector('.explore')
 
 function changeIt(){
     const random = Math.floor(Math.random() * imageArr.length)

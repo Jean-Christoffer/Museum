@@ -98,6 +98,7 @@ body{
     background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 2rem;
 }
 
 
@@ -107,15 +108,11 @@ header {
     border-image: linear-gradient(90deg, #1CB5E0 0%, #000851 100%) 1;
     position: sticky;
     top: 0;
-    z-index: 1
+    z-index: 1;
+    align-items: center;
 }  
 
 
-.navigation-wrapper{
-    align-items: center;
-  
-   
-}
 
 .nav{
     list-style: none;
@@ -132,7 +129,7 @@ header {
 
 
 @media (max-width: 52em){
-    .navigation-wrapper{
+         header{
         justify-content: space-around;
     }
 
@@ -209,7 +206,7 @@ header {
     .hamburger{
         display: none;
     }
-    .navigation-wrapper{
+  header {
         justify-content: center; 
     }
  
@@ -234,15 +231,13 @@ header {
 
 
 /*Intro Landing Page*/
-.intro{
-    background: black;
-    padding: 20px;
 
-}
 
 .hero-section{
     text-align: center;
-    margin:80px auto;
+    padding: 20px;
+    background: black;
+    margin: 10px;
 }
 .hero-section h1{
     padding: 20px;
@@ -281,27 +276,21 @@ header {
     margin: 0px auto;
     text-transform: uppercase;
 }
-
-@media(min-width: 40rem){
-    .intro{
-        margin: 50px;
-    }
-    .cta-hero{
-        padding: 10px 80px;
-    }
-    .hero-section{
-        margin:50px auto;
-    }
-}
-
-.video-wrapper{
+.trailer{
+    width: 100%;
     justify-content: center;
     margin: 10px auto;
     max-width: 600px;
 }
-.trailer{
-    max-width: 100%;
-  
+
+@media(min-width: 40rem){
+
+    .cta-hero{
+        padding: 10px 80px;
+    }
+    .hero-section{
+        margin:50px 20px;
+    }
 }
 
 /*Event-page*/
@@ -637,15 +626,14 @@ textarea{
 /*about page*/
 
 
-.about-us{
+.information-banner{
     display: grid;
     grid-template-columns: 1fr;
-}
-.about-us{
     background: white;
     padding: 20px;
 }
-.about-us h1,h2{
+
+.information-banner h1,h2{
     font-size: 1.5rem;
     max-width: 550px;
     margin: 20px auto;
@@ -657,7 +645,7 @@ textarea{
     line-height: 150%;
 }
 
-.about-explore{
+.explore{
     justify-content: center;
     align-items: center;
     background-image: url('/images/aboutImages/dino1.jpg');
@@ -674,10 +662,12 @@ textarea{
     padding: 1px 10px;
     cursor: pointer;
 }
-.explore-text h2{
+.explore-text p{
     background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100% );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-family: var(--font-h-elements);
 }
 .explore-text div{
     opacity: 0.1;   
@@ -687,7 +677,7 @@ textarea{
     width: fit-content;
     
 }
-.admission{
+.admission, .address-banner{
     background: white;
     
 }
@@ -697,7 +687,7 @@ textarea{
 }
 
 @media(min-width:40rem){
-    .about-us{
+    .information-banner{
         grid-template-columns: 1fr 1fr
     }
     .about-text h1{
@@ -716,13 +706,8 @@ textarea{
     .admission article{
         max-width: 500px;
     }
-    .about-explore{
+    .explore{
         height: min(600px, 800px); 
-    }
-    .about-explore h2{
-        display: inherit;
-       font-size: 3rem;
-       font-weight: 700;
     }
     .explore-text{
         padding: 10px;
@@ -761,7 +746,9 @@ textarea{
 
 iframe{
    margin: 10px 0;
-    width: 100%;
+   width: 100%;
+   border: none;
+   height: min(450px, 600px);
 
 }
 .visit-explore{
@@ -810,4 +797,17 @@ footer h4{
     background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.cta-wrapper-visit{
+    margin-top: 10px;
+}
+
+@media(min-width:40rem){
+    .cta-wrapper-visit{
+        margin: 0;
+        margin-top: 10px;
+        
+    }
+    
 }
