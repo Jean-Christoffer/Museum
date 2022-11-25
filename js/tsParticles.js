@@ -1,14 +1,5 @@
 tsParticles.load("tsParticles", {
     fpsLimit: 60,
-    interactivity:{
-      detectsOn:"canvas",
-      events:{
-        onHover:{
-          enable:true,
-          mode:"repulse"
-        },
-      },
-    },
     backgroundMode: {
       enable: true
     },
