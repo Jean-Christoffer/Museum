@@ -5,6 +5,7 @@ html{
     font-size: 16px;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgb(3, 3, 3) 0%, rgb(5, 5, 5) 35%, rgb(12, 19, 36) 68%, rgb(0, 13, 15) 100%); 
+    scroll-behavior: smooth;
 }
 #tsParticles {
     width: 100%;
@@ -663,16 +664,20 @@ textarea{
     height: min(300px, 500px);
     
 }
-.about-explore h2{
-    display: none;
-}
+
 .explore-text{
-    background: rgba(0, 0, 0, 0.877);
+    background: rgba(0, 0, 0, 0.945);
     border-radius: 10px;
-    padding: 0 10px;
+    padding: 1px 10px;
+    cursor: pointer;
+}
+.explore-text h2{
+    background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .explore-text div{
-    opacity: 0.1;
+    opacity: 0.1;   
 }
 .get-involved-cta{
     margin: 10px auto;
@@ -715,9 +720,9 @@ textarea{
         display: inherit;
        font-size: 3rem;
        font-weight: 700;
-        background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100% );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    }
+    .explore-text{
+        padding: 10px;
     }
 }
 
@@ -725,7 +730,8 @@ textarea{
 /*get involved*/
 
 .involved-text h1{
-    font-size: 2rem
+    font-size: 2rem;
+ 
 }
 .volunteering-text{
     background: #04080D;
@@ -733,6 +739,10 @@ textarea{
 }
 .involved-banner{
     background: transparent;
+   
+}
+.involved-banner h1{
+    text-align: center;
 }
 
 /*Booking*/
@@ -741,12 +751,19 @@ textarea{
     color: palevioletred;
     
 }
+.google-maps{
+ background: black;
 
+}
 
+iframe{
+   margin: 10px 0;
+    width: 100%;
 
-
-
-
+}
+.visit-explore{
+    background-image: url('/images/aboutImages/universe.jpg');
+}
 
 
 
