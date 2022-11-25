@@ -6,7 +6,12 @@ html{
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgb(3, 3, 3) 0%, rgb(5, 5, 5) 35%, rgb(12, 19, 36) 68%, rgb(0, 13, 15) 100%); 
 }
-
+#tsParticles {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1000;
+}
 *{
     margin: 0;
     padding: 0;
@@ -737,16 +742,18 @@ textarea{
 
 /*get involved*/
 
-#tsParticles {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1000;
+
+
+.involved-text h1{
+    font-size: 2rem
 }
-
-
-
-
+.volunteering-text{
+    background: #04080D;
+    color: white;
+}
+.involved-banner{
+    background: transparent;
+}
 
 
 
