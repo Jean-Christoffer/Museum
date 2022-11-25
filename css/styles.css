@@ -737,7 +737,10 @@ textarea{
 
 /*Booking*/
 
-
+.future{
+    color: palevioletred;
+    
+}
 
 
 
