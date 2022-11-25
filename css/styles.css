@@ -87,9 +87,10 @@ body{
 
 .logo-container{
     max-width: 100px;
+
 }
 .logo{
-    max-width: 100px;
+    max-width: 100%;
 }
 
 /* Navigation*/
