@@ -221,6 +221,12 @@ header {
 
     
  }
+ .copyright{
+    background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+ }
 
   
   .nav a:hover {
