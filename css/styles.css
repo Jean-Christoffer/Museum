@@ -65,17 +65,7 @@ a{
     display: flex;
   
 }
-@media(min-width:40rem){
-    h1{
-        font-size: var( --h1-desktop);
-    }
-    p{
-        font-size: var(--font-size-desktop);
-    }
-    ul{
-        font-weight: var(--font-weight-desktop);
-    }
-}
+
 
 body{
     min-height: 100vh;
@@ -90,7 +80,7 @@ body{
 
 }
 .logo{
-    max-width: 100%;
+    max-width: 100px;
 }
 
 /* Navigation*/
@@ -99,7 +89,7 @@ body{
     background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-family: var(--font-h-elements);
 }
 
@@ -127,6 +117,20 @@ header {
     align-items: center;
 }
 
+@media(min-width:40rem){
+    .title-site{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: var( --h1-desktop);
+    }
+    p{
+        font-size: var(--font-size-desktop);
+    }
+    ul{
+        font-weight: var(--font-weight-desktop);
+    }
+}
 /*Nav Mobile*/
 
 
@@ -392,8 +396,11 @@ header {
     margin: 20px auto;
  }
     .event-cta{
-    padding: 10px 80px;
+    padding: 10px 50px;
  }
+ .event-cta1{
+    padding: 10px 100px;
+ }  
 
     .event-time{
         font-weight: 700;
@@ -401,6 +408,7 @@ header {
     }
 
 @media(min-width:40rem){
+
     .event-banner h1{
        text-align: left;
        margin-left: 100px;
@@ -790,6 +798,7 @@ iframe{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    
 }
 select, option{
     padding: 7px;
@@ -810,11 +819,8 @@ select, option{
     margin-top: 10px;
 }
 .booking{
-    padding: 20px;
+    padding: 20px;  
 
-    margin: 50px auto;
-    background:#04080D;
-    color: white;
 }
 
 .booking-form{
@@ -846,6 +852,17 @@ select, option{
     padding: 5px 50px;
     text-align: center;
 }
+
+
+.test{
+
+   
+
+   
+    color: white;
+}
+
+
 
 /*Footer*/
 
