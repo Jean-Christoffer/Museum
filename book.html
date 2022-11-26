@@ -36,6 +36,7 @@
                 <li><a href="Exhibitions.html">Exhibitions</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="visit.html">Visit</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
             </ul>
         </nav>
@@ -58,7 +59,9 @@
                                     <input type="number" required>
                                 </div>
                             </div>
-                            <label for="people">Tickets</label>
+                            <label for="date">When will you visit ?</label>
+                            <input type="datetime-local" required value="2022-12-17T09:00">
+                            <label for="people">Number of tickets</label>
                             <select name="people" id="people" required>
                                 <option value="" class="option-select">--Select number of tickets--</option>
                                 <option value="6" class="option-select">6</option>
@@ -84,6 +87,13 @@
                                
                             <button class="contact-send cta" id="booking-submit">Book</button>
                     </form>
+                    <dialog  class="booking-success">
+                        <p>Thank you!</p>
+                        <p>Purchase successful</p>
+                        <p>See you at Future-tech</p>
+                          <button class="close-dialog">Close</button>
+                      </dialog>
+                    
         </section>
 
     </main>
@@ -94,8 +104,8 @@
             <li><a class="socials"><i class="fa-brands fa-square-twitter"></i></a></li>
         </ul>
         <ul class="usefull-links flex">
-            <li><a href="about.html">About / Get involved</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="/about.html#involved">Get involved</a></li>
         </ul>
         <h4 class="copyright">Copyright 2022 © Future-Science Oslo</h4>        
     </footer>

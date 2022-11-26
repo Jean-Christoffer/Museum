@@ -827,6 +827,24 @@ select, option{
 .price-total{
     justify-content: space-between;
 }
+.booking-success{
+   margin: 0 auto;
+   top:400px;
+   padding: 20px;
+   border-radius: 10px;
+   line-height: 150%;
+   text-align: center;
+   background: rgb(137, 197, 137);
+
+}
+.booking-success p{
+    text-align: left;
+}
+.close-dialog{
+    margin: 10px;
+    padding: 5px 50px;
+    text-align: center;
+}
 
 /*Footer*/
 
