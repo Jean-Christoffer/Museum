@@ -19,8 +19,8 @@ closeDialog.addEventListener('click', ()=>{
 
 function openDialog(){
     for(let i = 0; i < bookingForm.length; i++ ){
-        if(bookingForm.input.value !== "" ){
-            bookingSuccess.open()
+        if(bookingForm.input.value !== " " ){
+            bookingSuccess.show()
         }
     }
 

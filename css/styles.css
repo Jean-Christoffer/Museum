@@ -831,6 +831,7 @@ select, option{
    margin: 0 auto;
    top:400px;
    padding: 20px;
+   width: min(300px, 350px);
    border-radius: 10px;
    line-height: 150%;
    text-align: center;
