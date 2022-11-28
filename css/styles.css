@@ -261,10 +261,11 @@ header {
  }
 
   .nav a:hover, .active-page {
+    transition: 0.3s ease;
     background: var(--white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
- }
+}
 }
 
 /*CTA*/
@@ -870,13 +871,10 @@ footer{
     align-items: center;
     gap: 30px;
     font-weight:400;
-  
 }
+
 footer h4{
     margin-bottom: 10px;
-    background: -webkit-linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 0.9rem;
     text-align: center;
 }
