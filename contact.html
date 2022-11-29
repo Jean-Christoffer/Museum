@@ -25,19 +25,19 @@
     </head>
 <body class="flex">
     <header class="flex">
-        <div class="hamburger" aria-controls="nav" aria-expanded="false" role="navigation-button">
+        <div class="hamburger" aria-controls="nav" aria-expanded="false" role="navigation">
             <span class="line top"></span>
             <span class="line middle"></span>
             <span class="line bottom"></span>
         </div>
         <div class="logo-wrapper flex">
-            <picture class="logo-container">
+            <div class="logo-container">
                 <a href="index.html"><img src="images/logo/output-onlinepngtools.png" alt="museum-logo" class="logo"></a>
-            </picture>
+            </div>
             <h1 class="title-site">FUTURE-TECH</h1>    
         </div>   
 
-        <nav>
+        <nav id="nav">
             <ul class="nav flex">
 
                 <li><a href="index.html" class="active">Home</a></li>
@@ -58,13 +58,13 @@
                     <form class="contact-form">
                         <fieldset class="contact-form">
                             <label for="name">Name</label>
-                            <input type="text" name="name">
+                            <input type="text" id="name">
                             <label for="email">Email</label>
-                            <input type="email">
+                            <input type="email" id="email">
                             <label for="subject">Subject</label>
-                            <input type="text">
+                            <input type="text" id="subject">
                             <label for="message">Message</label>
-                            <textarea></textarea>
+                            <textarea id="message"></textarea>
                             <input type="submit" value="send" class="contact-send cta">
                         </fieldset>
                     </form>
