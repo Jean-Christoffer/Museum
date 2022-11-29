@@ -357,9 +357,9 @@ header {
     }
 
     .event-card-container{
-        width: min(100% - 2rem, 300px);
+        width: min(100% - 1rem, 300px);
         background: white;
-        border-radius: 15px;   
+        border-radius: 15px;
     }
 
     .event-title{
@@ -371,11 +371,12 @@ header {
         margin: 0 0 10px 0;
     }
     .event-text{
-        padding: 0 10px;
+        padding: 5px 20px;
         margin-bottom: 10px;
     }
     .event-time{
         font-weight: var(--font-weight-desktop);
+        margin-bottom: 5px;
     }
     .picture img{
         width: 100%;
@@ -383,6 +384,8 @@ header {
         display: block;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
+        object-position: center;
+        object-fit: cover;
     }
 @media(min-width:40rem){
     .event-banner h1{
