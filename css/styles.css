@@ -577,6 +577,7 @@ textarea{
 .titles{
     font-weight: var(--font-weight-desktop);
 }
+
 @media(max-width:310px){
     .time-info{
         grid-column: 1;
