@@ -485,20 +485,19 @@ header {
 .contact h1{
     color: white;
     text-align: center;
-}
-
-.contact{
     margin: 10px;
 }
+
 .contact-form-container{
     max-width: 1000px;
     margin: 50px auto;
     display: grid;
     grid-template-columns: 1fr;
 }
-
-.form-container{
+.form-container, .museum-info{
     padding: 20px;
+}
+.form-container{
     background: black;
     color: white;
 }
@@ -533,8 +532,7 @@ textarea{
     background: white;
     color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 20px;    
+    grid-template-columns: 1fr 1fr;   
 }
 .contact-send {
     border: none;
@@ -562,7 +560,6 @@ textarea{
     margin-bottom: 15px;
 }
 .time-info{
-  
     grid-column: 3;
     grid-row: 2;
     margin-bottom: 15px;
@@ -573,7 +570,7 @@ textarea{
     margin-bottom: 15px;
 }
 .titles{
-    font-weight: 600;
+    font-weight: var(--font-weight-desktop);
 }
 @media(max-width:310px){
     .time-info{
@@ -741,6 +738,7 @@ iframe{
 }
 
 /*Booking*/
+
 .booking-form, .booking, .booking-success{
     padding: 20px;
 }
