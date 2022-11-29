@@ -55,10 +55,11 @@ html{
 
 h1{
     font-size: var(--h1-mobile);
-    font-family: var(--font-h-elements);
 }
 h2{
     font-size: var( --h2-mobile);
+}
+h1,h2,h3{
     font-family: var( --font-h-elements);
 }
 
@@ -264,7 +265,7 @@ header {
 }
 }
 
-/*CTA*/
+/*CTA and buttons*/
 
 .cta{
     padding: 10px 60px;
@@ -276,6 +277,7 @@ header {
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
+    cursor: pointer;
     font-weight: var(--font-size-mobile);            
 }
 .cta-container{
@@ -292,6 +294,11 @@ header {
 .cta:hover {
     background-position: right center; 
     color: var(--white);
+  }
+  button{
+    border: none;
+    height: 40px;
+    outline: none;
   }
 
 @media(min-width: 40rem){
@@ -493,6 +500,7 @@ header {
     margin: 50px auto;
     display: grid;
     grid-template-columns: 1fr;
+    background: white;
 }
 .form-container, .museum-info{
     padding: 20px;
@@ -510,7 +518,10 @@ header {
 .contact-form{
     display: grid;
     row-gap: 1rem;
+}
+.contact-form, .museum-info{
     width: min(100%, 400px);
+    margin: 0 auto;
 }
 .contact-form input{
     width: 100%;
@@ -529,17 +540,11 @@ textarea{
     padding: 5px;
 }
 .museum-info{
-    background: white;
     color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr;   
+    grid-template-columns: 1fr 1fr;     
 }
-.contact-send {
-    border: none;
-    height: 40px;
-    cursor: pointer;
-    outline: none;
-}
+
 .fa-location-dot, .fa-clock, .fa-envelope, .fa-square-phone{
     font-size: 1.5rem;
 
