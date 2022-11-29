@@ -445,15 +445,13 @@ header {
     border-radius: 10px 10px 0 0;
 }
 .exhibition1{
-    background: url('/images/Museum/exresize/biologyDesktop.png');
-    background-size: cover;
+    background: center / cover no-repeat url('/images/Museum/exresize/biologyDesktop.png');
 }
 .exhibition2{
-    background: url('/images/Museum/exresize/universe.png') center;
-    background-size: cover;
+    background: center / cover no-repeat url('/images/Museum/exresize/universe.png');
 }
 .exhibition3{
-    background: url('/images/Museum/exresize/Medicine.png') center;
+    background: center / cover no-repeat url('/images/Museum/exresize/Medicine.png');
 }
 
 .exhibition-info-wrapper{
@@ -479,11 +477,11 @@ header {
     .exhibition-text{
         grid-row: 1;
         grid-column: 1/3;
-    }
-    
+    }    
 }
 
 /*contact*/
+
 .contact h1{
     color: white;
     text-align: center;
