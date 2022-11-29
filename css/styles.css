@@ -486,7 +486,6 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
-
 }
 .contact{
     margin: 10px;
@@ -502,7 +501,6 @@ header {
     padding: 20px;
     background: black;
     color: white;
-
 }
 
 .form-container h3{
@@ -514,8 +512,6 @@ header {
     display: grid;
     row-gap: 1rem;
     width: min(100%, 400px);
-   
-
 }
 .contact-form input{
     width: 100%;
@@ -524,8 +520,6 @@ header {
     border: none;
     border-radius: 5px;
     outline: none;
-
-
 }
 
 textarea{
@@ -636,7 +630,6 @@ textarea{
     font-size: 1.5rem;
     max-width: 550px;
     margin: 20px auto;
-   
 }
 
 .information-article{
@@ -654,7 +647,6 @@ textarea{
     background-size: cover;
     background-position:center;
     height: min(300px, 500px);
-    
 }
 
 .explore-text{
@@ -749,6 +741,7 @@ iframe{
 }
 
 /*Booking*/
+
 .booking-form{
     width: min(100% , 400px);
     padding: 20px;
