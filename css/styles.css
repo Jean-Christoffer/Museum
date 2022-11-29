@@ -485,8 +485,8 @@ header {
 .contact h1{
     color: white;
     text-align: center;
-    padding: 20px;
 }
+
 .contact{
     margin: 10px;
 }
@@ -741,21 +741,16 @@ iframe{
 }
 
 /*Booking*/
-
+.booking-form, .booking, .booking-success{
+    padding: 20px;
+}
+.booking-form, .booking-success{
+    border-radius: 10px;
+}
 .booking-form{
     width: min(100% , 400px);
-    padding: 20px;
     background: black;
     margin-bottom: 20px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    color:white;
-    
-}
-.booking-form h2{
     color:white;
 }
 select, option{
@@ -763,12 +758,7 @@ select, option{
     font-family: var( --font-body);
     font-size: 0.8rem;
     border-radius: 5px;
-    color: black;
     outline: none;
-
-}
-.option-select:hover{
-    color: red;
 }
 .credit-card{
     gap:10px;
@@ -776,16 +766,11 @@ select, option{
 .credit-card input{
     margin-top: 10px;
 }
-.booking{
-    padding: 20px;  
-}
-
 .booking-form{
     display: flex;
     flex-direction: column;
     max-width: 1000px;
     margin: 0 auto;
-
 }
 .price-total{
     justify-content: space-between;
@@ -793,9 +778,7 @@ select, option{
 .booking-success{
    margin: 0 auto;
    top:400px;
-   padding: 20px;
    width: min(300px, 350px);
-   border-radius: 10px;
    text-align: center;
    background: rgb(137, 197, 137);
 }
@@ -818,9 +801,7 @@ footer{
     border-image: var(--linear-gradient-nav-footer);
     align-items: center;
     gap: 30px;
-    font-weight:400;
 }
-
 footer h4{
     margin-bottom: 10px;
     font-size: 0.9rem;
@@ -829,9 +810,7 @@ footer h4{
 .socials{
     font-size: 1.9rem;
 }
-
 .social-list{
     margin-top: 30px;
     gap:3rem;
-    
 }
