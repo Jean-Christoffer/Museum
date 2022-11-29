@@ -346,7 +346,8 @@ header {
     }
 
     .event-banner{
-        background: center / cover no-repeat url(/images/Museum/rezised/jpg/eventbanner.png) ;
+        background: center / cover no-repeat url("/images/Museum/rezised/eventBanner.webp");
+        
     }
 
     .event-banner h1{
