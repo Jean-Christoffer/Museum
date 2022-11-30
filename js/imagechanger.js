@@ -1,19 +1,18 @@
 
 let index = 0;
-
-
+const img = document.querySelectorAll('.images');
+let i;
 
 function changeIt(){
-    setTimeout(changeIt, 4000)
-    let x;
-    const img = document.querySelectorAll('.images');
-    for( x = 0; x < img.length; x++){
-        img[x].style.display = "none";  
+    setInterval(changeIt, 4000)
+    for( i = 0; i < img.length; i++){
+        img[i].style.display = "none";  
     }  
     index++;
     if(index > img.length){
         index = 1
     }
     img[index -1].style.display = "block"
+ 
 }
 changeIt()
