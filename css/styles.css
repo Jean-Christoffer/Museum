@@ -737,7 +737,7 @@ iframe{
    margin: 10px 0;
    width: 100%;
    border: none;
-   height: min(450px, 600px);
+   height: min(350px, 500px);
 
 }
 .visit-explore{

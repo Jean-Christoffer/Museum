@@ -1,3 +1,4 @@
+
 let index = 0;
 
 
@@ -7,8 +8,8 @@ function changeIt(){
     let x;
     const img = document.querySelectorAll('.images');
     for( x = 0; x < img.length; x++){
-        img[x].style.display = "none"
-    }
+        img[x].style.display = "none";  
+    }  
     index++;
     if(index > img.length){
         index = 1
