@@ -623,6 +623,34 @@ textarea{
 }
 /*about page*/
 
+.news-letter{
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.news-letter-container {
+    flex-direction: column;
+    gap:10px;
+    margin-bottom: 20px;
+}
+.news-letter-container input{
+    padding: 5px 20px;
+    border-radius: 5px;
+    outline: none;
+}
+.sign-up{
+    gap:10px;
+    flex-direction: column;
+    align-items: center;
+}
+.sign-up-cta{
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
 .information-banner{
     display: grid;
     grid-template-columns: 1fr;
@@ -680,6 +708,13 @@ textarea{
 }
 
 @media(min-width:40rem){
+    .sign-up{
+        flex-direction: row;
+        align-items: center;
+    }
+    .news-letter-container input{
+        padding: 10px 30px;
+    }
     .explore-text p{
         font-size: 3rem;
     }

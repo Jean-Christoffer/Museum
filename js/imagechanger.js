@@ -4,7 +4,8 @@ const img = document.querySelectorAll('.images');
 let i;
 
 function changeIt(){
-    setInterval(changeIt, 4000)
+    setTimeout(changeIt, 4000)
+
     for( i = 0; i < img.length; i++){
         img[i].style.display = "none";  
     }  
