@@ -183,7 +183,7 @@ header {
         z-index: 1000;
         transform: translateX(-100%);
         transition: 0.4s ease-in-out;
-        background: rgba(53, 51, 51, 0.75);
+        background: rgba(8, 8, 8, 0.849);
         backdrop-filter:blur(1rem);
         text-align: left;
         justify-content: center;
@@ -322,15 +322,24 @@ header {
 }
 
 /*Intro Landing Page*/
+.images{
+    display: none;
 
+
+}
+.images.show{
+    display: block;
+
+
+
+
+}
 
 .hero-picture img, .about-images img{
     max-width: 600px;
     height: 400px;
     margin: 10px auto;
     object-fit: contain;
-
-
 }
 
 .hero-section{
