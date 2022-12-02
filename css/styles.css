@@ -463,7 +463,7 @@ header {
     object-fit: cover;
     object-position: center;
 }
-
+    /*I-pad*/
 @media(min-width:40rem){
     .exhibition-card p{
         text-align: left;
@@ -479,19 +479,17 @@ header {
         border-radius: 0 10px 0px 10px;
 }
 }
-
+    /*Desktop*/
 @media(min-width:52rem){
     .picture-exhibition img {
         border-radius: 0 10px 10px 0;
-        -webkit-border-radius: 0 10px 10px 0;
-        -moz-border-radius: 0 10px 10px 0;
-        -ms-border-radius: 0 10px 10px 0;
-        -o-border-radius: 0 10px 10px 0;
 }
     .exhibition-card{
         grid-template-columns: 1fr 1fr 1fr;
     }
-
+    .exhibition-card p{
+        text-align: justify;
+    }
     .picture-exhibition{
         grid-column: 3;
         grid-row: 1/3;
