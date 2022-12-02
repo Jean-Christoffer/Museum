@@ -172,7 +172,7 @@ header {
 }
 
 
-/*Nav Mobile*/
+    /*Navigation Mobile*/
 
 @media (max-width: 52em){
          header{
@@ -246,36 +246,36 @@ header {
 
 }
 
-/*Navigation Desktop*/
+    /*Navigation Desktop*/
 
-@media(min-width:52em){
+    @media(min-width:52em){
 
-    .logo-container{
-        margin: 5px 10px;
-    }
-    .hamburger{
-        display: none;
-    }
-  header {
-        justify-content: center; 
-    }
+        .logo-container{
+            margin: 5px 10px;
+        }
+         .hamburger{
+            display: none;
+        }
+        header {
+            justify-content: center; 
+        }
  
- .nav{
-    gap:clamp(1rem, 5vw, 5rem);
-    padding-block: 1rem;
-    padding-inline:clamp(3rem, 7vw ,10rem);
-    background: var(--linear-gradient-font);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
- }
+         .nav{
+        gap:clamp(1rem, 5vw, 5rem);
+        padding-block: 1rem;
+        padding-inline:clamp(3rem, 7vw ,10rem);
+        background: var(--linear-gradient-font);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-  .nav a:hover, .active-page {
-    transition: 0.3s ease;
-    background: var(--white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-}
+    .nav a:hover, .active-page {
+        transition: 0.3s ease;
+        background: var(--white);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}      
 
 /*CTA and buttons*/
 
@@ -324,6 +324,7 @@ header {
 }
 
 /*Intro Landing Page*/
+
 .images{
     display: none;
 }
