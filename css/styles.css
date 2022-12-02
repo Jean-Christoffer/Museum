@@ -464,15 +464,34 @@ header {
     object-position: center;
 }
 
-
-
 @media(min-width:40rem){
+    .exhibition-card p{
+        text-align: left;
+    }
+    .exhibition-card{
+        grid-template-columns: 1fr 1fr;
+    }
+    .picture-exhibition{
+        grid-column: 2;
+        grid-row: 1/2;
+    }
+    .picture-exhibition img{
+        border-radius: 0 10px 0px 10px;
+}
+}
+
+@media(min-width:52rem){
     .picture-exhibition img {
         border-radius: 0 10px 10px 0;
+        -webkit-border-radius: 0 10px 10px 0;
+        -moz-border-radius: 0 10px 10px 0;
+        -ms-border-radius: 0 10px 10px 0;
+        -o-border-radius: 0 10px 10px 0;
 }
     .exhibition-card{
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .picture-exhibition{
         grid-column: 3;
         grid-row: 1/3;
