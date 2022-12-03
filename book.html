@@ -17,22 +17,22 @@
 </head>
 <body class="flex">
     <header class="flex">
-        <div class="hamburger" aria-controls="nav" aria-expanded="false" role="navigation-button">
+        <div class="hamburger" aria-controls="nav" aria-expanded="false" role="navigation">
             <span class="line top"></span>
             <span class="line middle"></span>
             <span class="line bottom"></span>
         </div>
         <div class="logo-wrapper flex">
-            <picture class="logo-container">
+            <div class="logo-container">
                 <a href="index.html"><img src="images/Museum/logo/output-onlinepngtools.png" alt="museum-logo" class="logo"></a>
-            </picture>
+            </div>
             <div class="title-container">
                 <p class="title-site">SCIENTA</p>
                 <p class="title-site title-sub">museum</p>
             </div>    
         </div>   
 
-        <nav>
+        <nav id="nav">
             <ul class="nav flex">
 
                 <li><a href="index.html" class="active">Home</a></li>
@@ -51,21 +51,21 @@
                     <form class="contact-form booking-form">
                         <h2>Book a guided tour</h2>
                             <label for="name">Name</label>
-                            <input type="text" name="name" required>
+                            <input type="text" name="name" id="name" required>
                             <label for="email">Email</label>
-                            <input type="email" required>
+                            <input type="email" id="email" required>
                             <div class="credit-card flex">
                                 <div class="cc">
                                     <label for="CC">CC</label>
-                                    <input type="number" required>
+                                    <input type="number" id="CC" required>
                                 </div>
                                 <div class="cvc">
                                     <label for="CVC">CVC</label>
-                                    <input type="number" required>
+                                    <input type="number" id="number" required>
                                 </div>
                             </div>
                             <label for="date">When will you visit ?</label>
-                            <input type="datetime-local" required value="2022-12-17T09:00">
+                            <input type="datetime-local" id="date" required value="2022-12-17T09:00">
                             <label for="people">Number of tickets</label>
                             <select name="people" id="people" required>
                                 <option value="" class="option-select">--Select number of tickets--</option>
