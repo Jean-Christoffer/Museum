@@ -5,7 +5,11 @@ const book = document.querySelector('#booking-submit')
 const bookingSuccess = document.querySelector('.booking-success')
 const closeDialog = document.querySelector('.close-dialog')
 
-const bookingForm = document.querySelector('.booking-form')
+const nameInput = document.querySelector('#name')
+const emailInput = document.querySelector('#email')
+const ccInput = document.querySelector('#CC')
+const cvcInput = document.querySelector('#CVC')
+
 
 select.addEventListener('change',(updatePrice)=>{
     totalPrice.innerText = updatePrice.target.value * 70  + ' ,-'
@@ -13,15 +17,21 @@ select.addEventListener('change',(updatePrice)=>{
 
 
 book.addEventListener('click', openDialog)
-closeDialog.addEventListener('click', ()=>{
+
+closeDialog.addEventListener('click',()=>{
     bookingSuccess.close()
-})
+    window.location.reload()
+})    
 
-function openDialog(){
-    for(let i = 0; i < bookingForm.length; i++ ){
-        if(bookingForm.input.value !== " " ){
-            bookingSuccess.show()
-        }
-    }
-
+function openDialog() {
+  if (
+    nameInput.value !== "" &&
+    emailInput.value !== "" &&
+    ccInput.value > 0 &&
+    cvcInput.value > 0 &&
+    select.value !== "--Select number of tickets--" &&
+    totalPrice.innerText !== "0 ,-"
+  ) {
+    bookingSuccess.show();
+  }
 }
