@@ -876,9 +876,10 @@ footer{
     align-items: center;
     gap: 20px;
 }
-footer h4{
+footer p{
     font-size: 0.9rem;
     text-align: center;
+    font-weight: 700;
 }
 .socials{
     font-size: 1.9rem;
