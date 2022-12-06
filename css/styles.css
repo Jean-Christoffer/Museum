@@ -813,12 +813,26 @@ iframe{
     background-image: url('/images/aboutImages/universe.jpg');
 }
 
+/*success box*/
+
+.success-box{
+    margin: 0 auto;
+    top:400px;
+    width: min(200px - 1,  450px);
+    background: #5cb85c;
+    text-align: center;
+ }
+
+.close-dialog{
+    margin-top: 10px;
+    padding: 5px 50px;
+}
 /*Booking*/
 
-.booking-form, .booking, .booking-success{
+.booking-form, .booking, .success-box{
     padding: 20px;
 }
-.booking-form, .booking-success{
+.booking-form, .success-box{
     border-radius: 10px;
 }
 .booking-form{
@@ -849,21 +863,7 @@ select, option{
 .price-total{
     justify-content: space-between;
 }
-.booking-success{
-   margin: 0 auto;
-   top:400px;
-   width: min(300px, 350px);
-   text-align: center;
-   background: rgb(137, 197, 137);
-}
-.booking-success p{
-    text-align: left;
-}
-.close-dialog{
-    margin: 10px;
-    padding: 5px 50px;
-    text-align: center;
-}
+
 
 /*Footer*/
 
@@ -874,10 +874,9 @@ footer{
     border-top: 3px solid transparent;
     border-image: var(--linear-gradient-nav-footer);
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 footer h4{
-    margin-bottom: 10px;
     font-size: 0.9rem;
     text-align: center;
 }
@@ -885,8 +884,11 @@ footer h4{
     font-size: 1.9rem;
 }
 .social-list{
-    margin-top: 30px;
-    gap:3rem;
+    margin-top: 20px;
+    gap:2.5rem;
+}
+.usefull-links{
+    margin-bottom: 20px;
 }
 
 @media(min-width:52rem){
@@ -899,4 +901,8 @@ footer h4{
     .social-list{
         margin: 0;
     }
-}
+    .usefull-links{
+        margin-bottom: 0px;
+    }
+    
+}   

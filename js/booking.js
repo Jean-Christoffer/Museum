@@ -2,7 +2,7 @@ const totalPrice = document.querySelector('.total-amount')
 const select = document.querySelector('#people')
 const book = document.querySelector('#booking-submit')
 
-const bookingSuccess = document.querySelector('.booking-success')
+const bookingSuccess = document.querySelector('.success-box')
 const closeDialog = document.querySelector('.close-dialog')
 
 const nameInput = document.querySelector('#name')
