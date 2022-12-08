@@ -24,6 +24,8 @@
     --black:black;
     --secondary-black:#04080D;
     --white:white;
+
+    /*linear-gradients*/
     --linear-gradient-background: linear-gradient(90deg, rgb(3, 3, 3) 0%, rgb(5, 5, 5) 35%, rgb(12, 19, 36) 68%, rgb(0, 13, 15) 100%); 
     --linear-gradient-nav-footer:  linear-gradient(90deg, #1CB5E0   0%, #000851 100%) 1;
     --linear-gradient-font: -webkit-linear-gradient(90deg, #00d2ff 0%, #069afc 100%);
