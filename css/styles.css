@@ -307,10 +307,7 @@ header {
     transform: scale(0.99);
 }
 
-.cta:hover {
-    background-position: right center; 
-    color: var(--white);
-  }
+
   button{
     border: none;
     height: 40px;
@@ -327,7 +324,13 @@ header {
 .cta-container-visit, .cta-container-about{
     margin: 10px 0;
     }
+}
 
+@media(min-width: 50rem){
+    .cta:hover {
+        background-position: right center; 
+        color: var(--white);
+      }
 }
 
 /*Intro Landing Page*/
