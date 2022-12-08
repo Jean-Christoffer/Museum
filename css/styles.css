@@ -144,6 +144,9 @@ body{
 
     .title-site{
         font-size: 2rem;
+    }
+    .copyright{
+        margin-bottom: 0;
     }    
 }
 .title-sub{
@@ -888,11 +891,11 @@ footer p{
     font-weight: 700;
 }
 .socials{
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 .social-list{
     margin-top: 20px;
-    gap:2.5rem;
+    gap:1.5rem;
 }
 .usefull-links{
     margin-bottom: 20px;
