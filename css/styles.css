@@ -504,9 +504,6 @@ header {
     .exhibition-card{
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .exhibition-card p{
-        text-align: justify;
-    }
     .picture-exhibition{
         grid-column: 3;
         grid-row: 1/3;
