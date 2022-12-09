@@ -69,9 +69,7 @@ h1,h2,h3{
 
 p{
     font-size: var(--font-size-mobile);
-    line-height: 150%;
-
-   
+    line-height: 150%;   
 }
 
 ul{
@@ -375,7 +373,7 @@ header {
     }
 
     .event-banner{
-        background: bottom / cover no-repeat url("/images/Museum/events/jpg/eventBanner.jpg");
+        background: bottom / cover no-repeat url('/Museum/images/Museum/events/jpg/eventBanner.jpg');
         
     }
 
@@ -434,7 +432,7 @@ header {
 /*Exhibitions*/
 
 .exhibitions-banner{
-    background: bottom url('/images/Museum/exhebition/jpg/exbanner.jpg');
+    background: bottom url('/Museum/images/Museum/exhebition/jpg/exbanner.jpg');
 }
 
 .exhibitions-section-wrapper{
