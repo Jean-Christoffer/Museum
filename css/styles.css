@@ -8,7 +8,7 @@
     --h2-mobile:1.2rem;
     --h2-desktop:1.5rem;
 
-    --font-size-mobile:0.9rem;
+    --font-size-mobile:1rem;
     --font-size-desktop:1rem;
     --font-weight-mobile:500;
     --font-weight-desktop:700;
@@ -20,12 +20,12 @@
     
 
     /*Colors*/
-    --linear-gradient-background-exhibition:linear-gradient(90deg, rgb(12, 3, 41) 0%, rgb(20, 14, 34) 45%, rgb(17, 3, 56) 100%); 
     --black:black;
     --secondary-black:#04080D;
     --white:white;
 
     /*linear-gradients*/
+    --linear-gradient-background-exhibition:linear-gradient(90deg, rgb(12, 3, 41) 0%, rgb(13, 7, 27) 70%, rgb(13, 2, 44) 100%); 
     --linear-gradient-background: linear-gradient(90deg, rgb(3, 3, 3) 0%, rgb(5, 5, 5) 35%, rgb(12, 19, 36) 68%, rgb(0, 13, 15) 100%); 
     --linear-gradient-nav-footer:  linear-gradient(90deg, #1CB5E0   0%, #000851 100%) 1;
     --linear-gradient-font: -webkit-linear-gradient(90deg, #00d2ff 0%, #069afc 100%);
@@ -269,8 +269,8 @@ header {
         }
  
          .nav{
-        gap:clamp(1rem, 5vw, 5rem);
-        padding-inline:clamp(3rem, 7vw , 10rem);
+        gap:clamp(1rem, 4vw, 4rem);
+        padding-inline:clamp(2.5rem, 6vw , 9rem);
         background: var(--linear-gradient-font);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
