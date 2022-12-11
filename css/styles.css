@@ -936,7 +936,7 @@ footer{
         text-align: left;
         }
     .contact-info-footer-mail-number{
-        padding-inline:min(2rem)
+        padding-inline:min(2rem, 2.5rem)
     }
 
     .social-list{
