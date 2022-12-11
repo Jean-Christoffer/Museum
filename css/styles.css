@@ -189,20 +189,19 @@ header {
 
     .nav{
         position: fixed;
-        inset:0 0% 0 0;
+        inset: 0;
         flex-direction: column;
-        padding: min(30vh, 10rem) 2em;
+        padding: min(30vh, 2rem);
         gap:2rem;
         z-index: 1000;
         transform: translateX(-100%);
         transition: 0.4s ease-in-out;
         background: rgba(8, 8, 8, 0.849);
-        backdrop-filter:blur(1rem);
+        backdrop-filter:blur(1.1rem);
         text-align: left;
         justify-content: center;
         color: var( --white);
-   
-    }
+}
     .active-page{
         background: var(--linear-gradient-font);
         -webkit-background-clip: text;
