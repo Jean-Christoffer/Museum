@@ -881,17 +881,27 @@ select, option{
 /*Footer*/
 
 footer{
-    background:black;
+    background: black;
     flex-direction: column;
     margin-top: auto;
     border-top: 3px solid transparent;
     border-image: var(--linear-gradient-nav-footer);
+}
+.footer-wrapper{
+    flex-direction: column;
     align-items: center;
     gap: 20px;
+      
 }
-footer p{
-    font-size: 0.9rem;
+.extra-info{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     text-align: center;
+    color: white;
+
+}
+.footer-wrapper, .usefull-links{
     font-weight: 700;
 }
 .socials{
@@ -904,14 +914,26 @@ footer p{
 .usefull-links{
     margin-bottom: 20px;
 }
-
-@media(min-width:52rem){
-    footer{
+.contact-info-footer-mail-number{
+    margin-bottom: 10px;
+}
+@media(min-width:49rem){
+    .footer-wrapper{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 20px;
+        margin-top: 20px;
     }
+    .extra-info{
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 15px 0;
+        text-align: left;
+        }
+    .contact-info-footer-mail-number{
+        padding-inline:min(1.7rem, 2rem)
+    }
+
     .social-list{
         margin: 0;
     }
