@@ -8,8 +8,9 @@
     --h2-mobile:1.2rem;
     --h2-desktop:1.5rem;
 
-    --font-size-mobile:1rem;
-    --font-size-desktop:1rem;
+
+    --font-size:1rem;
+
     --font-weight-mobile:500;
     --font-weight-desktop:700;
 
@@ -72,7 +73,7 @@ h1,h2,h3{
 }
 
 p{
-    font-size: var(--font-size-mobile);
+    font-size: var(--font-size);
     line-height: 150%;   
 }
 
@@ -136,10 +137,6 @@ body{
     }
     h2 {
         font-size: var(--h2-desktop);
-    }
-    p{
-        font-size: var(--font-size-desktop);
-
     }
     ul{
         font-weight: var(--font-weight-desktop);
@@ -299,8 +296,7 @@ header {
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
-    cursor: pointer;
-    font-weight: var(--font-size-mobile);            
+    cursor: pointer;          
 }
 .cta-container{
     width: fit-content;
@@ -325,7 +321,7 @@ header {
 
 @media(min-width: 40rem){
     .cta{
-        font-weight: var(--font-size-desktop);     
+        font-weight: var(--font-weight-desktop);     
     }
 .cta-container-visit, .cta-container-about{
     margin: 10px 0;
@@ -364,7 +360,7 @@ header {
 }
 @media(min-width: 40rem){
     .hero-section{
-        margin:50px 20px;
+        margin:50px 0px;
     }
     .hero-picture img{
         height: 500px;
@@ -904,7 +900,9 @@ footer{
     gap: 20px;
     text-align: center;
     color: white;
-
+}
+.extra-info p{
+    font-size: 0.9rem;
 }
 .footer-wrapper, .usefull-links{
     font-weight: 700;
@@ -938,7 +936,9 @@ footer{
     .contact-info-footer-mail-number{
         padding-inline:min(2rem, 2.5rem)
     }
-
+    .extra-info p{
+        font-size: 1rem;
+    }
     .social-list{
         margin: 0;
     }
