@@ -115,7 +115,9 @@ img{
     margin-bottom: 10px;
 }
 
-
+.title-site, .title-sub{
+    font-weight: var(--font-weight-desktop)
+}
 body{
     min-height: 100vh;
     width: 100%;
@@ -142,6 +144,9 @@ body{
     .title-site{
         font-size: 2rem;
     }
+    .title-site, .title-sub{
+        font-weight: var(--font-weight-mobile)
+    }
     .copyright{
         margin-bottom: 0;
     }    
@@ -149,6 +154,7 @@ body{
 .title-sub{
     font-size: 1rem;
     text-align: left;
+
  
 }
 
@@ -263,8 +269,8 @@ header {
         }
  
          .nav{
-        gap: 5rem;
-        padding-inline:3rem;
+        gap:clamp(1rem, 5vw, 5rem);
+        padding-inline:clamp(3rem, 7vw , 10rem);
         background: var(--linear-gradient-font);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
