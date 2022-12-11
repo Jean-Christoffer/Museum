@@ -263,9 +263,8 @@ header {
         }
  
          .nav{
-        gap:clamp(1rem, 5vw, 5rem);
-        padding-block: 1rem;
-        padding-inline:clamp(3rem, 7vw ,10rem);
+        gap: 5rem;
+        padding-inline:3rem;
         background: var(--linear-gradient-font);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
