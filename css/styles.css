@@ -381,11 +381,12 @@ header {
         
     }
 
-    .event-banner h1{
+    .event-banner{
         padding: 20px;
         text-align: center;
         color: white;
-        gap:10px
+        text-align: center;
+
     }
 
     .event-card-container{
@@ -422,9 +423,9 @@ header {
     }
 
 @media(min-width:40rem){
-    .event-banner h1{
+    .event-banner{
        text-align: left;
-       margin-left: 100px;
+       padding-left: 100px;
     }
     .event-banner{
         background-position: left;
@@ -530,10 +531,12 @@ header {
 
 /*contact*/
 
-.contact h1{
+.contact-h1{
     color: white;
+    background: black;
     text-align: center;
-    margin: 10px;
+    background: rgba(0, 0, 0, 0.801);
+    backdrop-filter:blur(0.2rem);
 }
 
 .contact-form-container{
@@ -753,6 +756,10 @@ textarea{
     background: #04080D;
     color: white;
 }
+.visit-h1{
+    background: black;
+    backdrop-filter:none;
+}
 
 @media(min-width:40rem){
     .sign-up{
@@ -843,7 +850,7 @@ iframe{
 
 /*Booking*/
 
-.booking-form, .booking, .success-box{
+.booking-form, .success-box{
     padding: 20px;
 }
 .booking-form, .success-box{
@@ -854,6 +861,9 @@ iframe{
     background: black;
     margin-bottom: 20px;
     color:white;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
 }
 select, option{
     padding: 7px;
@@ -868,12 +878,7 @@ select, option{
 .credit-card input{
     margin-top: 10px;
 }
-.booking-form{
-    display: flex;
-    flex-direction: column;
-    max-width: 1000px;
-    margin: 0 auto;
-}
+
 .price-total{
     justify-content: space-between;
 }
