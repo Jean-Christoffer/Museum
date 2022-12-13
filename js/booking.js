@@ -12,7 +12,7 @@ const cvcInput = document.querySelector('#CVC')
 
 
 select.addEventListener('change',(updatePrice)=>{
-    totalPrice.innerText = updatePrice.target.value * 70  + ' ,-'
+    totalPrice.textContent = updatePrice.target.value * 70  + ' ,-'
 })
 
 
@@ -30,7 +30,7 @@ function openDialog() {
     ccInput.value > 0 &&
     cvcInput.value > 0 &&
     select.value !== "--Select number of tickets--" &&
-    totalPrice.innerText !== "0 ,-"
+    totalPrice.textContent !== "0 ,-"
   ) {
     bookingSuccess.show();
   }
