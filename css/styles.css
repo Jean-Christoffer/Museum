@@ -330,7 +330,7 @@ header {
     padding: 10px 80px;
 }
 
-.cta-container:active, .logo:active{
+.cta-container:active, .logo:active, .title-site:active{
     transform: scale(0.99);
 }
 
