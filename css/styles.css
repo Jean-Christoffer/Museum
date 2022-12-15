@@ -673,7 +673,12 @@ textarea{
 
 /*about page*/
 
-.about-section, #support, .news-letter, .researcher, .admission, .address-banner{
+.about-section,
+ #support,
+.news-letter,
+.researcher,
+.admission,
+.address-banner{
     color: var(--black);
 }
 .explore-together, .contact-banner, .book-banner{
