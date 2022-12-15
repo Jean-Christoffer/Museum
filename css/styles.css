@@ -404,6 +404,7 @@ button{
 
     .event-banner{
         background: #012d53b6;
+        backdrop-filter:blur(0.2rem);
     }
 
     .event-card-container{
@@ -466,9 +467,10 @@ button{
 .exhibition-visit-box{
     background: var(--white);
     color: var(--black);
-    margin: 10px;
+    margin: 20px;
     border-radius: 5px;
-    box-shadow: var(--box-shadow)
+    box-shadow: var(--box-shadow);
+
 }
 
  .exhibition-text, .exhibition-time, .exhibition-visit-box{
@@ -508,7 +510,7 @@ button{
     }
     .picture-exhibition img{
         border-radius: 0 10px 0px 10px;
-}
+    }
 }
     /*Desktop*/
 
@@ -517,7 +519,7 @@ button{
         border-radius: 0 10px 10px 0;
     }
     .exhibition-card{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 0.65fr 1fr 1fr;
     }
     .picture-exhibition{
         grid-column: 3;
@@ -527,10 +529,13 @@ button{
     .exhibition-text{
         grid-row: 1;
         grid-column: 1/3;
+        width: min(100%, 590px);
     }
     .exhibition-visit-box{
         grid-column: 2;
         grid-row: 2;
+        margin-right: 50px;
+        
     }
     .exhibition-time{
         grid-column: 1;
@@ -683,6 +688,7 @@ textarea{
 }
 .explore-together, .contact-banner, .book-banner{
     background: rgba(0, 0, 0, 0.863);
+    backdrop-filter:blur(0.1rem);
 }
 
 .about-images img{
