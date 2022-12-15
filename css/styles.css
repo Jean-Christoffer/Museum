@@ -276,7 +276,7 @@ header {
 
     /*Navigation Desktop*/
 
-    @media(min-width:52em){
+    @media(min-width:52rem){
 
         .logo-container{
             margin: 5px 10px;
@@ -298,12 +298,10 @@ header {
     }
 
     .nav a:hover, .active-page {
-        transition: 0.3s ease;
-        background: var(--white);
-        background-clip: text;
-        -webkit-background-clip: text;
-        
-    }
+        transition: 0.5s ease;
+        text-underline-offset: 0.4rem;
+        text-decoration: underline var(--white);
+}
 }      
 
 /*CTA and buttons*/
