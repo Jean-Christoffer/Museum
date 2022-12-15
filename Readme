@@ -1,10 +1,12 @@
-#2022-15-12_Project_Exam1_Science_Museum_Jean-Christoffer-Dah
+2022-15-12_Project_Exam1_Science_Museum_Jean-Christoffer-Dah
 
-This Project 
+This Project is my first year project exam
+The site is a science museum aimed for young people from the age 7 - 15
 
-## Link to Figma prototype: https://www.figma.com/file/9BqYpQZYqE5nc0a5pixDPq/Untitled?node-id=0%3A1&t=ClYt8wqe7ichZFaS-1
 
-Site architecture<br>
+Link to Figma prototype: https://www.figma.com/file/9BqYpQZYqE5nc0a5pixDPq/Untitled?node-id=0%3A1&t=ClYt8wqe7ichZFaS-1
+
+Site architecture
 - Landing Page
 - Exhibitions
 - Events
@@ -13,4 +15,4 @@ Site architecture<br>
 - Booking
 - About / Get involved
 
-### Link to deployed site: https://spectacular-sorbet-d98fe8.netlify.app/index.html
+ Link to deployed site: https://spectacular-sorbet-d98fe8.netlify.app/index.html
