@@ -560,15 +560,12 @@ button{
     color: var(--white);
 }
 
-.form-container h3{
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
 .contact-form{
     display: grid;
     row-gap: 1rem;
+}
+legend{
+    text-align: center;
 }
 
 .contact-form, .museum-info{
@@ -651,6 +648,10 @@ textarea{
 }
 
 @media(min-width:40rem){
+    legend{
+        text-align: left;
+    }
+    
     .contact-form-container{
         grid-template-columns: 1fr 1fr;
       
@@ -662,7 +663,7 @@ textarea{
         align-self: center;
         grid-row: 1;
         text-align: left;
-        grid-column: 1;
+        grid-column: 1/3;
         font-size: 1.5rem;
     }
     .phone-info{
@@ -676,7 +677,7 @@ textarea{
         margin-bottom: 15px;
     }
     .fa-location-dot, .fa-clock, .fa-envelope, .fa-square-phone{
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 }
 
