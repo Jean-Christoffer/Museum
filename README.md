@@ -8,7 +8,7 @@ it should take for granted that the audience is curious and intelligent.
 
 ## Screenshots
 
-![App Screenshot](images/museum/screenshot.jpg)
+![App Screenshot](images/Museum/screenshot.jpg)
 
 
 ## Built with
