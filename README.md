@@ -10,6 +10,8 @@ it should take for granted that the audience is curious and intelligent.
 
 ![App Screenshot](images/Museum/screenshot.jpg)
 
+## Features
+- Responsive
 
 ## Built with
 
